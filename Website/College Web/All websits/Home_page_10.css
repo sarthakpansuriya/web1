@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #FFA500; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: slideInDown 1s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.superfoods {
+    padding: 20px;
+    background-color: #E0F7FA; /* Light Blue background */
+}
+
+.food-item {
+    background-color: #ffffff;
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: slideUp 1.2s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item h2 {
+    color: #4CAF50; 
+}
+
+.food-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+    animation: zoomIn 0.5s ease-in;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #FFA500;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeIn 2s ease-in;
+}

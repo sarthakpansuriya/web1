@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="LogIn.css">
+</head>
+<body background="image jpg.jpg">
+    <div class="login-container">
+    <center><h2>LogIn</h2></center>
+    <script>
+        function data()
+        {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            if(a==""||b=="")
+            {
+                alert("All Fields are Mendatory.");
+                return false;
+            }
+            else if(b!=1234)
+            {
+                alert("Wrong Password!");
+                return false;
+            }
+            else
+            {
+                true;
+            }
+        }  
+    </script>
+    <form action="Home.html" onsubmit="return data();">
+        <input type="text" placeholder="Username" id="n1">
+        <input type="password" placeholder="Password" id="n2">
+        <br><br>
+        <button class="login">LogIn</button><br>
+        <br><p>Don't have an account? <a href="Register.html">Sign up</a></p>
+    </form>
+</body>
+</html>

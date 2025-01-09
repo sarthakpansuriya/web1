@@ -1,0 +1,49 @@
+.navbar {
+    background-color: orange;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin-left: 440px;
+}
+
+.navbar-nav .nav-link {
+    color: #007BFF;
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #007BFF;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 0px;
+}
+
+.carousel-item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #FF8C00;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}

@@ -1,0 +1,25 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: url('../images/header-bg.jpg') no-repeat center center/cover;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tip-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    background-color: #343a40;
+}

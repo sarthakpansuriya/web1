@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SP Nutrition Hub</title>
+    <link rel="stylesheet" href="Contact Us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="Nutrition_logo.jpg" alt="SP Nutrition Hub Logo" class="logo">
+        </div>
+        <div class="company-name">
+            <h1>SP Nutrition Hub</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Fill out the form below or contact us at:</p>
+            <div class="epa">
+                <li><strong>Email Id :-</strong> sarthakpansuriya912@gmail.com </li>
+                <li><strong>Phone:-</strong>7990168151</li>
+                <li><strong>Address:-</strong> A-1102, Abhishek Luxuriya, Nand Chowk, Abrama Rd, Mota Varachha, Surat-394105.</li>
+            </div><br>
+            <a href="http://instagram.com/sarthak_pansuriya07">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </a>
+            <a href="https://youtube.com/@sarthakctaftskills7405?si=X2gSFQBEz23UMpkh">
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+            </a>
+            <script>
+                function data()
+                {
+                    var a=document.getElementById("n1").value;
+                    var b=document.getElementById("n2").value;
+                    var c=document.getElementById("n3").value;
+                    var d=document.getElementById("n4").value;  
+                
+                    if(a==""||b==""||c==""||d=="")
+                    {
+                        alert("All Fields are Mendatory.");
+                        return false;
+                    }
+                    else if(b.length<10||b.length>10)
+                    {
+                        alert("Number should be of 10 Digits! Please enter valid Numbers.");
+                        return false;
+                    }
+                    else if(isNaN(b))
+                    {
+                        alert("Only Number are allowed! Please enter valid Numbers.");
+                        return false;
+                    }
+                    else
+                    {
+                        alert("Sent Successfully! 👍")
+                        true;
+                    }
+                }  
+            </script>
+        
+            <form action="yt web.html" onsubmit="return data();">
+                <input type="text" placeholder="Name" id="n1">
+                <input type="text" placeholder="Mobile No" id="n2">
+                <input type="text" placeholder="Subject" id="n3">
+                <textarea id="n4" name="message" rows="3" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+</body>
+</html>
